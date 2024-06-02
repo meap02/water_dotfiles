@@ -1,0 +1,693 @@
+[2024-05-31 02:11:06.155] [241479] (engine.cpp:539): Created native Engine, time: Fri May 31 02:11:06 2024 PDT, logPath: /home/meap/.config/discord/0.0.54/modules/discord_voice/, logLevel: 2
+[2024-05-31 02:11:06.155] [241479] (input_volume_stats_reporter.cc:98): Will not log any `WebRTC.Audio.Apm.AppliedInputVolume.*` histogram stats.
+[2024-05-31 02:11:06.155] [241479] (input_volume_stats_reporter.cc:98): Will not log any `WebRTC.Audio.Apm.RecommendedInputVolume.*` histogram stats.
+[2024-05-31 02:11:06.155] [241479] (audio_processing_impl.cc:695): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2024-05-31 02:11:06.155] [241479] (audio_processing_impl.cc:708): AudioProcessing: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 0 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-05-31 02:11:06.155] [241479] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-05-31 02:11:06.155] [241479] (audio_device_buffer.cc:65): AudioDeviceBuffer::ctor
+[2024-05-31 02:11:06.155] [241479] (audio_device_impl.cc:143): current platform is Linux
+[2024-05-31 02:11:06.155] [241479] (audio_device_impl.cc:162): CreatePlatformSpecificObjects
+[2024-05-31 02:11:06.156] [241479] (audio_device_impl.cc:991): PlatformAudioLayer
+[2024-05-31 02:11:06.156] [241479] (audio_device_impl.cc:298): PulseAudio support is enabled.
+[2024-05-31 02:11:06.156] [241479] (audio_device_impl.cc:303): Linux PulseAudio APIs will be utilized
+[2024-05-31 02:11:06.156] [241479] (audio_device_impl.cc:344): AttachAudioBuffer
+[2024-05-31 02:11:06.156] [241479] (audio_device_buffer.cc:182): SetRecordingSampleRate(0)
+[2024-05-31 02:11:06.156] [241479] (audio_device_buffer.cc:188): SetPlayoutSampleRate(0)
+[2024-05-31 02:11:06.156] [241479] (audio_device_buffer.cc:202): SetRecordingChannels(0)
+[2024-05-31 02:11:06.156] [241479] (audio_device_buffer.cc:208): SetPlayoutChannels(0)
+[2024-05-31 02:11:06.156] [241479] (audio_device_impl.cc:354): ActiveAudioLayer
+[2024-05-31 02:11:06.156] [241479] (audio_device_buffer.cc:65): AudioDeviceBuffer::ctor
+[2024-05-31 02:11:06.156] [241479] (audio_device_impl.cc:143): current platform is Linux
+[2024-05-31 02:11:06.156] [241479] (audio_device_impl.cc:162): CreatePlatformSpecificObjects
+[2024-05-31 02:11:06.156] [241479] (audio_device_impl.cc:991): PlatformAudioLayer
+[2024-05-31 02:11:06.156] [241479] (audio_device_impl.cc:298): PulseAudio support is enabled.
+[2024-05-31 02:11:06.156] [241479] (audio_device_impl.cc:303): Linux PulseAudio APIs will be utilized
+[2024-05-31 02:11:06.156] [241479] (audio_device_impl.cc:344): AttachAudioBuffer
+[2024-05-31 02:11:06.156] [241479] (audio_device_buffer.cc:182): SetRecordingSampleRate(0)
+[2024-05-31 02:11:06.156] [241479] (audio_device_buffer.cc:188): SetPlayoutSampleRate(0)
+[2024-05-31 02:11:06.156] [241479] (audio_device_buffer.cc:202): SetRecordingChannels(0)
+[2024-05-31 02:11:06.156] [241479] (audio_device_buffer.cc:208): SetPlayoutChannels(0)
+[2024-05-31 02:11:06.156] [241479] (input_volume_stats_reporter.cc:98): Will not log any `WebRTC.Audio.Apm.AppliedInputVolume.*` histogram stats.
+[2024-05-31 02:11:06.156] [241479] (input_volume_stats_reporter.cc:98): Will not log any `WebRTC.Audio.Apm.RecommendedInputVolume.*` histogram stats.
+[2024-05-31 02:11:06.156] [241479] (audio_processing_impl.cc:695): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2024-05-31 02:11:06.156] [241479] (audio_processing_impl.cc:708): AudioProcessing: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 0 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-05-31 02:11:06.156] [241479] (audio_engine.cpp:419): Creating audio engine: standard
+[2024-05-31 02:11:06.156] [241479] (audio_device_impl.cc:364): Init
+[2024-05-31 02:11:06.162] [241479] (audio_device_impl.cc:364): Init
+[2024-05-31 02:11:06.164] [241479] (audio_coding.cpp:149): Using software Opus decoder
+[2024-05-31 02:11:06.164] [241479] (audio_coding.cpp:166): Using software Opus encoder
+[2024-05-31 02:11:06.164] [241479] (audio_device_impl.cc:895): RegisterAudioCallback
+[2024-05-31 02:11:06.164] [241479] (audio_device_impl.cc:547): SetMicrophoneVolume(100)
+[2024-05-31 02:11:06.164] [241479] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-05-31 02:11:06.164] [241479] (audio_device_impl.cc:895): RegisterAudioCallback
+[2024-05-31 02:11:06.164] [241479] (audio_engine.cpp:151): Setting audio input device: 'default'
+[2024-05-31 02:11:06.164] [241479] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-05-31 02:11:06.164] [241479] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-05-31 02:11:06.164] [241479] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-05-31 02:11:06.165] [241479] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-05-31 02:11:06.165] [241479] (audio_device_impl.cc:573): output: 1
+[2024-05-31 02:11:06.165] [241479] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-05-31 02:11:06.165] [241479] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-05-31 02:11:06.165] [241479] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-05-31 02:11:06.165] [241479] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-05-31 02:11:06.165] [241479] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-05-31 02:11:06.165] [241479] (audio_engine.cpp:168): Setting audio output device: 'default'
+[2024-05-31 02:11:06.165] [241479] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-05-31 02:11:06.165] [241479] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-05-31 02:11:06.166] [241479] (audio_device_impl.cc:619): output: 1
+[2024-05-31 02:11:06.166] [241479] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-05-31 02:11:06.166] [241479] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-05-31 02:11:06.166] [241479] (audio_device_impl.cc:911): BuiltInAECIsAvailable
+[2024-05-31 02:11:06.166] [241479] (audio_device_generic.cc:32): BuiltInAECIsAvailable: Not supported on this platform
+[2024-05-31 02:11:06.166] [241479] (audio_device_impl.cc:914): output: 0
+[2024-05-31 02:11:06.166] [241479] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-05-31 02:11:06.170] [241479] (matched_filter.cc:141): AEC3: Pre echo configuration:  threshold = 0.5, mode =  3.
+[2024-05-31 02:11:06.171] [241479] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
+[2024-05-31 02:11:06.171] [241479] (echo_canceller3.cc:793): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
+[2024-05-31 02:11:06.171] [241479] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 1, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 1, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 6, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-05-31 02:11:06.171] [241479] (captured_audio_processor.cpp:127): SetNoiseCancellation: 0
+[2024-05-31 02:11:06.171] [241479] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 1, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 1, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 6, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-05-31 02:11:06.171] [241479] (field_trial.cc:164): Setting field trial string:WebRTC-Audio-NetEqDecisionLogicConfig/reinit_after_expands:100/
+[2024-05-31 02:11:06.174] [241479] (engine.cpp:238): *** OnDevicesChanged:
+[2024-05-31 02:11:06.174] [241479] (engine.cpp:239): * audioInput:
+[2024-05-31 02:11:06.174] [241479] (engine.cpp:244): * audioOutput:
+[2024-05-31 02:11:06.174] [241479] (engine.cpp:238): *** OnDevicesChanged:
+[2024-05-31 02:11:06.174] [241479] (engine.cpp:239): * audioInput:
+[2024-05-31 02:11:06.174] [241479] (engine.cpp:242): - default: C920 PRO HD Webcam Analog Stereo ()
+[2024-05-31 02:11:06.174] [241479] (engine.cpp:242): - Starship/Matisse HD Audio Controller Analog Stereo ()
+[2024-05-31 02:11:06.174] [241479] (engine.cpp:242): - C920 PRO HD Webcam Analog Stereo ()
+[2024-05-31 02:11:06.174] [241479] (engine.cpp:244): * audioOutput:
+[2024-05-31 02:11:06.174] [241479] (engine.cpp:238): *** OnDevicesChanged:
+[2024-05-31 02:11:06.174] [241479] (engine.cpp:239): * audioInput:
+[2024-05-31 02:11:06.174] [241479] (engine.cpp:242): - default: C920 PRO HD Webcam Analog Stereo ()
+[2024-05-31 02:11:06.174] [241479] (engine.cpp:242): - Starship/Matisse HD Audio Controller Analog Stereo ()
+[2024-05-31 02:11:06.174] [241479] (engine.cpp:242): - C920 PRO HD Webcam Analog Stereo ()
+[2024-05-31 02:11:06.174] [241479] (engine.cpp:244): * audioOutput:
+[2024-05-31 02:11:06.174] [241479] (engine.cpp:247): - default: Starship/Matisse HD Audio Controller Analog Stereo ()
+[2024-05-31 02:11:06.174] [241479] (engine.cpp:247): - Starship/Matisse HD Audio Controller Analog Stereo ()
+[2024-05-31 02:11:06.174] [241479] (engine.cpp:247): - TU106 High Definition Audio Controller Digital Stereo (HDMI) ()
+[2024-05-31 02:11:06.295] [241479] (audio_engine.cpp:151): Setting audio input device: 'default'
+[2024-05-31 02:11:06.295] [241479] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-05-31 02:11:06.295] [241479] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-05-31 02:11:06.295] [241479] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-05-31 02:11:06.295] [241479] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-05-31 02:11:06.295] [241479] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-05-31 02:11:06.296] [241479] (audio_device_impl.cc:573): output: 1
+[2024-05-31 02:11:06.296] [241479] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-05-31 02:11:06.296] [241479] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-05-31 02:11:06.296] [241479] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-05-31 02:11:06.296] [241479] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-05-31 02:11:06.296] [241479] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-05-31 02:11:06.296] [241479] (audio_engine.cpp:168): Setting audio output device: 'default'
+[2024-05-31 02:11:06.296] [241479] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-05-31 02:11:06.296] [241479] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-05-31 02:11:06.296] [241479] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-05-31 02:11:06.296] [241479] (audio_device_impl.cc:619): output: 1
+[2024-05-31 02:11:06.296] [241479] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-05-31 02:11:06.296] [241479] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-05-31 02:11:06.296] [241479] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-05-31 02:11:06.296] [241479] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-05-31 02:11:06.296] [241479] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-05-31 02:11:06.297] [241448] (discord.cpp:753): JS console: ["%c[default]","[BUILD INFO] Release Channel: stable, Build Number: 297274, Version Hash: a779deccb99fcfcddaa8318954d516d4ed1f0b28"]
+[2024-05-31 02:11:06.488] [241448] (discord.cpp:753): JS console: ["Window state not initialized",null]
+[2024-05-31 02:11:06.498] [241448] (discord.cpp:753): JS console: ["%c[default]","[NATIVE INFO] host 0.0.54, modules: discord_desktop_core: 1, discord_erlpack: 1, discord_spellcheck: 1, discord_utils: 1, discord_voice: 3, discord_zstd: 1, discord_krisp: 2, discord_game_utils: 1, discord_rpc: 1, build: null"]
+[2024-05-31 02:11:06.522] [241479] (audio_engine.cpp:151): Setting audio input device: 'default'
+[2024-05-31 02:11:06.522] [241479] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-05-31 02:11:06.522] [241479] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-05-31 02:11:06.522] [241479] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-05-31 02:11:06.522] [241479] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-05-31 02:11:06.522] [241479] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-05-31 02:11:06.523] [241479] (audio_device_impl.cc:573): output: 1
+[2024-05-31 02:11:06.523] [241479] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-05-31 02:11:06.523] [241479] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-05-31 02:11:06.523] [241479] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-05-31 02:11:06.523] [241479] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-05-31 02:11:06.523] [241479] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-05-31 02:11:06.523] [241479] (audio_engine.cpp:168): Setting audio output device: 'default'
+[2024-05-31 02:11:06.523] [241479] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-05-31 02:11:06.523] [241479] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-05-31 02:11:06.523] [241479] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-05-31 02:11:06.523] [241479] (audio_device_impl.cc:619): output: 1
+[2024-05-31 02:11:06.523] [241479] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-05-31 02:11:06.523] [241479] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-05-31 02:11:06.543] [241448] (discord.cpp:753): JS console: ["Initializing krisp module"]
+[2024-05-31 02:11:07.189] [241448] (discord.cpp:753): JS console: ["%c[Spellchecker]","sh is not a valid locale."]
+[2024-05-31 02:11:07.309] [241448] (discord.cpp:753): JS console: ["%c[Spellchecker]","Switching to en-US","(available)"]
+[2024-05-31 02:11:07.421] [241448] (discord.cpp:753): JS console: ["%c[CloudSyncUtils]","CloudSync is not supported on this platform"]
+[2024-05-31 02:11:07.540] [241448] (discord.cpp:753): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2024-05-31 02:11:07.621] [241448] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway.discord.gg, encoding: etf, version: 9, compression: zstd-stream"]
+[2024-05-31 02:11:07.621] [241448] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[FAST CONNECT] successfully took over websocket, state:","[object Object]"]
+[2024-05-31 02:11:07.622] [241448] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 1 ms"]
+[2024-05-31 02:11:07.653] [241448] (discord.cpp:753): JS console: ["%c[RPCServer:WSS]","Starting on 6463"]
+[2024-05-31 02:11:07.656] [241448] (discord.cpp:753): JS console: ["%c[RPCServer:IPC]","Starting on /run/user/1000/discord-ipc-0"]
+[2024-05-31 02:11:08.638] [241448] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[READY] took 1017ms, as 5f5b77ca7e45f81959ec53d4383728b5"]
+[2024-05-31 02:11:08.696] [241448] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_OPEN"]
+[2024-05-31 02:11:08.697] [241448] (discord.cpp:753): JS console: ["%c[DatabaseManager]","removing database (user: 209465101021872128, database: undefined)"]
+[2024-05-31 02:11:08.713] [241448] (discord.cpp:753): JS console: ["%c[NativeDispatchUtils]","Tried getting Dispatch instance before instantiated"]
+[2024-05-31 02:11:08.737] [241448] (discord.cpp:753): JS console: ["%c[Spotify]","WS Connecting"]
+[2024-05-31 02:11:08.738] [241448] (discord.cpp:753): JS console: ["%c[Spotify]","Added account: 227vgl2iomjx3rzio7wy46vdq"]
+[2024-05-31 02:11:08.772] [241448] (discord.cpp:753): JS console: ["%c[GatewaySocket]","Dispatched 1 messages in 133ms"]
+[2024-05-31 02:11:08.809] [241448] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[READY_SUPPLEMENTAL] took 1188ms"]
+[2024-05-31 02:11:09.204] [241448] (discord.cpp:753): JS console: ["%c[Spotify]","WS Connected"]
+[2024-05-31 02:11:09.359] [241448] (discord.cpp:753): JS console: ["%c[Spotify]","Devices updated for 227vgl2iomjx3rzio7wy46vdq:","[object Object]"]
+[2024-05-31 02:11:09.363] [241448] (discord.cpp:753): JS console: ["%c[Spotify]","Profile updated for 227vgl2iomjx3rzio7wy46vdq: isPremium = true"]
+[2024-05-31 02:11:11.546] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:11:16.476] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:11:31.997] [241742] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-west
+[2024-05-31 02:11:31.997] [241742] (region_latency_tester.cpp:72): Sending 5 latency test pings to region santa-clara
+[2024-05-31 02:11:31.997] [241742] (region_latency_tester.cpp:72): Sending 5 latency test pings to region seattle
+[2024-05-31 02:11:31.997] [241742] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-south
+[2024-05-31 02:11:31.997] [241742] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-central
+[2024-05-31 02:11:32.069] [241742] (region_latency_tester.cpp:283): Average RTT for region us-west is 16.5
+[2024-05-31 02:11:32.069] [241742] (region_latency_tester.cpp:283): Average RTT for region santa-clara is 26.75
+[2024-05-31 02:11:32.069] [241742] (region_latency_tester.cpp:283): Average RTT for region seattle is 45
+[2024-05-31 02:11:32.069] [241742] (region_latency_tester.cpp:283): Average RTT for region us-south is 48.25
+[2024-05-31 02:11:32.069] [241742] (region_latency_tester.cpp:283): Average RTT for region us-central is 71
+[2024-05-31 02:12:06.570] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:12:16.584] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:12:31.632] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:12:41.648] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:13:11.694] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:15:06.894] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:15:41.972] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:15:57.000] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:16:02.005] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:16:22.048] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:16:37.060] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:16:47.085] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:16:52.094] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:17:17.144] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:17:27.157] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:17:37.137] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:18:37.285] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:19:57.433] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:20:27.493] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:28:48.498] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:28:53.492] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:29:08.524] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:29:23.560] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:29:33.579] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:30:05.515] [241448] (discord.cpp:753): JS console: ["%c[MessageActionCreators]","Fetching messages for 1220434359702650915 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2024-05-31 02:30:05.517] [241448] (discord.cpp:753): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me/1220434359702650915"]
+[2024-05-31 02:30:05.787] [241448] (discord.cpp:753): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 1220434359702650915 isBefore:false isAfter:false"]
+[2024-05-31 02:30:05.792] [241448] (discord.cpp:753): JS console: ["%c[ChannelMessages]","loadComplete: resetting state for channelId=1220434359702650915, sending.length=0"]
+[2024-05-31 02:30:32.730] [241448] (discord.cpp:753): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:809"]
+[2024-05-31 02:30:32.730] [241448] (discord.cpp:753): JS console: ["%c[MessageQueue]","Draining message from queue LogId:809 QueueLength: 0"]
+[2024-05-31 02:30:32.730] [241448] (discord.cpp:753): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-05-31 02:30:33.035] [241448] (discord.cpp:753): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:809 QueueLength: 0"]
+[2024-05-31 02:30:48.025] [241448] (discord.cpp:753): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:2650"]
+[2024-05-31 02:30:48.025] [241448] (discord.cpp:753): JS console: ["%c[MessageQueue]","Draining message from queue LogId:2650 QueueLength: 0"]
+[2024-05-31 02:30:48.026] [241448] (discord.cpp:753): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-05-31 02:30:48.281] [241448] (discord.cpp:753): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:2650 QueueLength: 0"]
+[2024-05-31 02:31:18.637] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:31:20.476] [241448] (discord.cpp:753): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me/1220434359702650915"]
+[2024-05-31 02:31:23.650] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:33:48.984] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:33:53.987] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:35:04.144] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:35:49.258] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:36:29.333] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:36:39.363] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:36:49.377] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:39:19.712] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:39:29.737] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:39:44.767] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:39:49.761] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:40:24.844] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:40:44.871] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:40:54.886] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:42:30.084] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:42:40.105] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:43:10.159] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:43:20.161] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:44:25.308] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:46:30.604] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:46:45.640] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:46:50.633] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:47:15.701] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:47:30.735] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:47:35.741] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:47:45.752] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:48:00.784] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:48:05.795] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:48:15.821] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:48:20.843] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:48:25.845] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:48:30.864] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:48:35.860] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:48:40.874] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:48:45.896] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:48:50.909] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:48:55.922] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:49:00.935] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:49:15.976] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:49:20.989] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:49:36.025] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:49:41.023] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:49:51.045] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:49:56.068] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:50:01.077] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:50:11.102] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:50:16.110] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:50:26.134] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:50:51.197] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:50:56.210] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:51:11.238] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:51:16.247] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:51:26.268] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:51:31.259] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:51:46.314] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:51:51.315] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:52:01.349] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:52:06.358] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:52:16.385] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:52:21.395] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:52:26.378] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:52:31.419] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:52:36.425] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:52:41.425] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:52:51.466] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:52:56.478] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:53:11.498] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:53:16.511] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:53:26.548] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:53:31.543] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:53:36.571] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:53:51.607] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:53:56.617] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:54:01.627] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:54:06.639] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:54:16.668] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:54:21.671] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:54:36.713] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:54:41.724] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:54:51.751] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:55:01.774] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:55:11.800] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:55:16.811] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:55:21.805] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:55:26.815] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:55:36.837] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:55:41.855] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:55:46.874] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:55:56.898] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:56:01.905] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:56:21.955] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:56:26.965] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:56:31.978] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:56:36.989] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:56:52.031] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:56:57.033] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:57:07.062] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:57:17.087] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:57:27.098] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:57:32.108] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:57:37.128] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:57:42.130] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:57:47.145] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:57:52.169] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:57:57.163] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:58:07.194] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:58:12.218] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:58:22.244] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:58:27.238] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:58:32.247] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:58:42.265] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:58:47.286] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:58:57.307] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:59:02.318] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:59:17.362] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:59:22.339] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:59:42.421] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 02:59:47.431] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:00:17.511] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:00:22.519] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:00:32.548] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:00:47.558] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:00:52.582] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:01:07.600] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:01:12.626] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:01:22.641] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:01:27.643] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:01:32.667] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:01:37.670] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:01:57.718] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:02:02.723] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:02:07.738] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:02:17.777] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:02:22.787] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:05:18.154] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:05:23.168] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:08:13.541] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:08:43.604] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:10:03.787] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:10:53.895] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:11:03.926] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:11:13.930] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:11:23.948] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:11:33.969] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:11:54.014] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:12:04.032] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:12:09.048] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:12:19.059] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:12:29.076] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:12:34.081] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:12:39.090] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:12:44.115] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:12:49.113] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:12:54.120] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:13:09.163] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:13:49.233] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:14:29.285] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:14:34.293] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:16:39.524] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:18:49.819] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:19:34.929] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:19:39.936] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:19:49.944] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:19:54.940] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:19:59.967] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:20:40.010] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:20:45.000] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:21:30.076] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:21:35.063] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:22:10.102] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:22:15.126] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:22:35.162] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:22:50.192] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:22:55.209] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:23:05.239] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:23:10.233] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:24:10.352] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:24:40.411] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:24:45.406] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:25:00.432] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:25:45.513] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:25:50.497] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:26:15.579] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:29:10.968] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:30:11.140] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:30:41.213] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:30:46.223] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:31:06.278] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:32:46.513] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:33:36.652] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:35:31.905] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:35:36.931] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:37:37.214] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:38:07.289] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:38:27.341] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:38:57.408] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:39:32.491] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:39:37.498] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:39:42.515] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:39:47.523] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:39:57.558] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:40:02.564] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:40:47.670] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:40:52.687] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:41:02.707] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:41:12.714] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:41:42.820] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:41:47.813] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:42:17.895] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:42:22.914] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:42:42.967] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:42:47.948] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:44:38.248] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:44:58.282] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:46:08.446] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:46:33.529] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:46:43.536] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:46:48.563] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:47:18.620] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:47:23.621] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:47:33.661] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:47:58.709] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:48:03.721] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:48:13.762] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:48:18.773] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:48:28.491] [241448] (discord.cpp:753): JS console: ["%c[Spotify]","Updated account access token: 227vgl2iomjx3rzio7wy46vdq"]
+[2024-05-31 03:48:28.574] [241448] (discord.cpp:753): JS console: ["%c[Spotify]","Devices updated for 227vgl2iomjx3rzio7wy46vdq:","[object Object]"]
+[2024-05-31 03:48:28.703] [241448] (discord.cpp:753): JS console: ["%c[Spotify]","Updated account access token: 227vgl2iomjx3rzio7wy46vdq"]
+[2024-05-31 03:48:48.855] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:48:53.866] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:48:58.880] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:49:08.908] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:50:34.114] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:50:39.138] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:51:19.234] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:51:34.273] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:51:59.331] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:52:14.385] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:52:44.457] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:53:24.544] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:53:34.571] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:54:19.681] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:54:54.772] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:55:04.798] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:55:34.872] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:55:39.884] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:55:54.916] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:55:59.946] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:56:04.951] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:56:09.966] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:56:14.980] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:56:25.008] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:56:35.035] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:56:45.061] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:56:55.090] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:57:00.098] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:57:05.109] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:57:20.137] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:57:25.137] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:58:35.309] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:58:40.318] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:59:20.420] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:59:25.427] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:59:45.466] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:59:50.470] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 03:59:55.494] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:00:05.518] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:00:10.535] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:00:15.534] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:00:20.529] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:00:35.572] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:00:40.567] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:00:50.601] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:02:10.781] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:03:10.944] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:03:15.944] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:03:30.979] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:03:40.995] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:03:46.004] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:03:51.013] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:03:56.023] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:04:01.045] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:04:06.061] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:04:11.059] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:04:21.086] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:04:51.148] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:05:11.192] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:06:01.292] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:06:41.375] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:07:46.514] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:07:51.526] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:11:42.044] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:11:52.065] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:12:27.144] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:12:47.192] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:12:57.214] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:13:27.270] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:13:52.328] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:14:22.382] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:14:27.386] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:15:22.540] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:15:37.579] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:15:42.581] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:16:02.608] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:16:12.623] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:16:37.671] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:16:57.717] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:17:27.789] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:17:32.793] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:19:03.016] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:19:08.006] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:20:18.113] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:20:23.122] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:21:28.239] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:21:33.252] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:21:53.291] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:21:58.296] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:22:23.357] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:22:53.413] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:23:28.488] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:23:33.487] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:27:39.292] [241448] (discord.cpp:753): JS console: ["%c[Spotify]","Devices updated for 227vgl2iomjx3rzio7wy46vdq:","[object Object]"]
+[2024-05-31 04:30:04.327] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:31:49.550] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:32:24.595] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:32:39.627] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:32:44.628] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:32:59.641] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:33:09.658] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:33:34.689] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:33:49.721] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:33:59.732] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:34:04.753] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:34:39.814] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:35:39.957] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:35:44.967] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:35:54.988] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:36:25.030] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:36:40.058] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:40:20.624] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:40:25.621] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:40:40.668] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:40:50.691] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:44:01.096] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:44:06.119] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:44:31.183] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:44:46.220] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:44:51.197] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:44:56.242] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:45:11.276] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:45:26.322] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:45:51.382] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:45:56.389] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:46:06.417] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:46:16.442] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:46:21.457] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:46:26.466] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:46:31.479] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:46:46.518] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:46:51.533] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:46:56.538] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:47:16.587] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:47:31.621] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:47:36.626] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:47:41.625] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:47:51.640] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:48:26.730] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:50:12.002] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:50:52.058] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:51:12.123] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:51:32.165] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:51:42.204] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:51:52.210] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:52:42.351] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:52:47.360] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:52:52.373] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:53:27.388] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:53:42.431] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:53:52.451] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:53:57.467] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:54:02.436] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:54:17.493] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:54:22.490] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:54:47.511] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:55:17.557] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:55:22.565] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:55:27.574] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:55:42.636] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:55:57.669] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:56:17.688] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:56:27.735] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:56:32.763] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:56:37.758] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:56:52.800] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:56:57.812] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:57:02.811] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:57:07.795] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:57:12.816] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:57:22.824] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:57:27.832] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:57:42.869] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:57:57.898] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 04:58:12.908] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:00:28.198] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:00:33.208] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:00:38.222] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:00:43.238] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:00:53.242] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:00:58.266] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:01:18.314] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:01:23.329] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:01:33.355] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:02:33.501] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:02:53.535] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:02:58.526] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:03:03.554] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:04:43.769] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:04:53.799] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:05:28.862] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:06:28.996] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:06:34.007] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:07:09.070] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:07:24.072] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:07:34.056] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:07:39.083] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:07:44.079] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:07:49.081] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:07:54.081] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:09:34.326] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:09:44.340] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:09:49.345] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:10:04.382] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:10:34.418] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:10:39.423] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:11:29.472] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:11:39.486] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:11:44.493] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:11:59.522] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:12:04.542] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:12:09.560] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:12:14.562] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:12:19.560] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:12:24.585] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:12:29.598] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:12:39.606] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:12:54.653] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:13:54.790] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:15:34.968] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:15:39.976] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:16:00.028] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:16:05.040] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:16:30.086] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:16:35.116] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:16:40.138] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:16:45.142] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:16:50.156] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:17:00.175] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:17:10.188] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:17:15.203] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:17:35.247] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:17:40.259] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:19:05.459] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:19:30.489] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:19:40.529] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:19:45.536] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:19:50.532] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:20:10.611] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:20:15.603] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:20:20.614] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:20:35.655] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:20:45.679] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:20:50.685] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:20:55.707] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:21:35.772] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:22:45.964] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:22:50.975] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:23:16.035] [241448] (discord.cpp:753): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-05-31 05:23:17.954] [241448] (discord.cpp:753): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 890ms"]
+[2024-05-31 05:23:17.979] [241448] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 2.97 seconds."]
