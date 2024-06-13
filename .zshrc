@@ -103,6 +103,7 @@ alias ll="ls -lsh"
 alias la="ls -lsha"
 alias e="exit"
 alias cd="z"
+alias vim="nvim"
 
 # zoxide init
 eval "$(zoxide init zsh)"

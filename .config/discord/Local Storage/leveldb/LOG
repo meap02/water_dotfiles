@@ -1,6 +1,0 @@
-2024/05/31-02:11:04.567 3aeb5 Reusing MANIFEST /home/meap/.config/discord/Local Storage/leveldb/MANIFEST-000001
-2024/05/31-02:11:04.567 3aeb5 Recovering log #4
-2024/05/31-02:11:04.568 3aeb5 Reusing old log /home/meap/.config/discord/Local Storage/leveldb/000004.log 
-2024/05/31-02:27:04.703 3aeb5 Level-0 table #8: started
-2024/05/31-02:27:04.726 3aeb5 Level-0 table #8: 776222 bytes OK
-2024/05/31-02:27:04.743 3aeb5 Delete type=0 #4
