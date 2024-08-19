@@ -104,6 +104,10 @@ alias la="ls -lsha"
 alias e="exit"
 alias cd="z"
 alias vim="nvim"
+alias fman='compgen -c | fzf | xargs man'
 
 # zoxide init
 eval "$(zoxide init zsh)"
+
+# ENV variables for path
+export PATH="$HOME/.local/bin:$PATH"

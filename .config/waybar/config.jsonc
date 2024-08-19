@@ -1,0 +1,231 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "bottom", // Waybar position (top|bottom|left|right)
+    "gtk-layer-shell": "true",
+    //"height": -10, // Waybar height (to be removed for auto height)
+    // "width": 2560, // Waybar width
+    "spacing": 0, // Gaps between modules (0px) Adjusted in the css
+    "margin-top": 0,
+    //"margin-bottom":-10,
+    "margin-left":0,
+    "margin-right":0,
+    // Choose the order of the modules
+    "modules-left": [
+        "custom/launcher",
+        "cpu",
+        "memory",
+        "temperature",
+        "disk",
+        "custom/updates"
+    ],
+    "modules-center": [
+        "hyprland/workspaces",
+    ],
+    "modules-right": [
+        "network",
+        "pulseaudio",
+        "custom/cycle_wall",
+        "idle_inhibitor",
+        "custom/notifications",
+        "tray",
+        "clock"
+    ],
+    "custom/cycle_wall": {
+        "format": "󱠆",
+        "on-click": "$HOME/.local/bin/wallpaper.sh"
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "󰈈",
+            "deactivated": "󰈉",
+        }
+    },
+    "custom/launcher": {
+        "format": "{}",
+        "tooltip": true,
+        "exec": "echo '{\"text\":\"\",\"tooltip\":\"Launcher\"}'",
+        "return-type": "json",
+
+        "on-click": "pkill fuzzel || fuzzel",
+    },
+    "hyprland/workspaces": {
+        "format": "{windows}",
+        "window-rewrite-default": "󰗣",
+        "format-window-separator": "󰼮",
+        "window-rewrite": {
+            "class<kitty>": "",
+            "class<firefox>": "",
+            "class<steam>": "",
+            "class<discord>": "",
+            "class<thunderbird>": "",
+            "title<Spotify Premium>": "",
+            "class<nemo>": "",
+            "class<org.pulseaudio.pavucontrol>": "",
+            "class<geany>": "󱞁",
+            "class<Stardew Valley>": "",
+            "class<nm-connection-editor>": "",
+            "class<eog>": "󰈈",
+            "class<nwg-displays>": "󰍹",
+            "class<org.gnome.calculator>": "󰃬",
+            "class<gnome-disks>": "󰋊",
+            "class<superautopets.x86_64>": "󰳗",
+        },
+        "on-scroll-up": "hyprctl dispatch workspace e-1",
+        "on-scroll-down": "hyprctl dispatch workspace e+1",
+        "on-click": "activate"
+    },
+    "cpu": {
+        "format": "  {usage}%",
+        "tooltip": true,
+        "on-click": "kitty --title task_mgr btop",
+        "interval": 2
+    },
+    "memory": {
+        "format": " {}%",
+        "tooltip": true,
+        "on-click": "kitty --title task_mgr btop",
+        "interval": 2
+    },
+    "temperature": {
+        // "thermal-zone": 2,
+        "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 40,
+        "format-critical": "{icon} {temperatureC}°C",
+        "format": "{icon} {temperatureC}°C",
+        "format-icons": [
+            "",
+            "",
+            ""
+        ],
+        "tooltip": true,
+        "on-click": "kitty --title task_mgr btop",
+        "interval": 2
+    },
+    "disk": {
+        "format": "  {percentage_used}%",
+        "tooltip": true,
+        "on-click": "gnome-disks",
+        "interval": 2
+    },
+    "custom/updates": {
+        "format": "{}",
+        "exec": "$HOME/.local/bin/updates",
+        "on-click": "$HOME/.local/bin/updates update",
+        "interval": 600,
+        "tooltip": true
+        // "tooltip-format": "{}",
+        // "exec-tooltip": "~/.scripts/updates tooltip"
+    },
+    "custom/music": {
+        "format": "{icon}{}",
+        "format-icons": {
+            "Playing": "   ", // Uncomment if not using the dynamic script
+            "Paused": "  ",
+            "Stopped": "  " // This stop symbol is RTL. So &#x202d; is left-to-right override.
+        },
+        "escape": true,
+        "tooltip": true,
+        "return-type": "json",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl previous",
+        "on-scroll-down": "playerctl next",
+        "on-click-right": "spotify-launcher",
+        //"max-length": 45
+    },
+    "hyprland/window": {
+        "format": "{}",
+        "separate-outputs": true,
+        "max-length": 35
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format": "↕{bandwidthTotalBytes}",
+        "format-disconnected": "{icon} No Internet",
+        "format-linked": " {ifname} (No IP)",
+        "format-alt": "↕{bandwidthUpBytes} | ↕{bandwidthDownBytes}",
+        "tooltip-format": "{ifname}: {ipaddr}/{cidr}   {gwaddr}",
+        "tooltip-format-wifi": "{icon} {essid} ({signalStrength}%)",
+        "tooltip-format-ethernet": "{icon} {ipaddr}/{cidr}",
+        "tooltip-format-disconnected": "{icon} Disconnected",
+        "on-click-right": "nm-connection-editor",
+        "format-icons": {
+            "ethernet": "",
+            "disconnected": "⚠",
+            "wifi": [
+                "󰖩",
+                "󱚼"
+            ]
+        },
+        "interval": 2
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{icon} {volume}%", 
+        "format-bluetooth": "{icon} {volume}%", 
+        "format-bluetooth-muted": "  0%", 
+        "format-muted": "  0%", 
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": " ",
+            "headset": "󰓃",
+            "phone": "",
+            "portable": "",
+            "car": " ",
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
+        "on-click-right": "pavucontrol"
+    },
+    "custom/notifications": {
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+            "notification": "<span foreground='red'><sup></sup></span>",
+            "none": "",
+            "dnd-notification": "<span foreground='red'><sup></sup></span>",
+            "dnd-none": ""
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click-right": "sleep 0.15 && swaync-client -t -sw",
+        "on-click": "sleep 0.15 && swaync-client -d -sw",
+        "escape": true
+    },
+    "tray": {
+        "icon-size": 15,
+        "spacing": 15
+    },
+    "clock": {
+        "timezone": "America/Los_Angeles",
+        "format": "  {:%a %b %d | %I:%M%p}",
+        "format-alt": "  {:%D | %r}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "calendar-weeks-pos": "right",
+        "today-format": "<span color='#000000'><b><u>{}</u></b></span>",
+        "format-calendar": "<span color='#000000'><b>{}</b></span>",
+        "format-calendar-weeks": "<span color='#000000'><b>W{:%U}</b></span>",
+        "format-calendar-weekdays": "<span color='#000000'><b>{}</b></span>",
+        "interval": 60
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+    "custom/power": {
+        "format": "{}",
+        // "exec": "~/.scripts/tools/expand power",
+        "exec": "echo '{\"text\":\"⏻\",\"tooltip\":\"Power\"}'",
+        "return-type": "json",
+        "on-click": "~/.config/wlogout/launch.sh"
+    }
+}

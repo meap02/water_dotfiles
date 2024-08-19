@@ -1,0 +1,309 @@
+@define-color text #e0d6ca;
+@define-color subtext #04d1f9;
+@define-color surface0 #0e1922;
+@define-color surface1 #1A3140;
+@define-color surface2 #3C7DA6;
+@define-color surface3 #82B0D9;
+
+@define-color accent1 #D08832;
+@define-color accent2 #29F2A9;
+
+/* =============================== */
+/* Universal Styling */
+/* =============================== */
+* { 
+  border-radius: 0px;
+  border: none;
+  font-family: 'Queensides', "Hurmit Nerd Font Regular";
+  font-weight: bold;
+  font-size: 13px;
+  min-height: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* =============================== */
+/* Bar Styling */
+/* =============================== */
+#waybar {
+  background-color: @surface0;
+  border-top: 1px solid @accent1;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  margin: 0px 0px;
+}
+/* Main Modules */
+#custom-launcher,
+#workspaces,
+#window,
+#tray,
+#clock,
+#pulseaudio,
+#network,
+#mpd,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#custom-music,
+#custom-updates,
+#custom-notifications,
+#custom-power,
+#custom-custom,
+
+
+/* =============================== */
+/* Workspaces */
+/* =============================== */
+#workspaces {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: 4px;
+  border-radius: 20px;
+  border-left: 2px dotted @accent1;
+  border-right: 2px dotted @accent1;
+  border-top: 2px dotted @accent1;
+  padding: 0.5rem 1rem;
+}
+
+#workspaces * {
+  font: 19px Hurmit Nerd Font Mono;
+  border-radius: 50%;
+}
+
+#workspaces button {
+  padding: 0px 4px 0px 4px;
+  margin: 0px 5px 0px 5px;
+  border-color: transparent;
+  color: @surface3;
+  box-shadow: inset 0 3px transparent;
+  min-width: 1em;
+  min-height: 1em;
+}
+
+#workspaces button:hover {
+  color: @accent2;
+}
+
+#workspaces button.active:hover {
+}
+
+#workspaces button.active {
+  color: @surface1;
+  background-color: @accent2;
+  animation: bubble 0.6s cubic-bezier(.26,.62,.47,.97);
+  padding: 0px 7px 0px 7px;
+}
+
+
+@keyframes bubble {
+  0% {
+    padding: 0px 0px 0px 0px;
+  }
+  50% {
+    padding: 0px 15px 0px 15px;
+  }
+  100% {
+    padding: 0px 7px 0px 7px;
+  }
+}
+
+/* =============================== */
+/* System Monitoring Modules */
+/* =============================== */
+
+#temperature {
+  color: @subtext;
+  letter-spacing: 1px;
+  font-size: 13px;
+  border: none;
+}
+
+#cpu {
+  color: @subtext;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: 0px;
+  padding-right: 5px;
+  font-size: 13px;
+  border: none;
+}
+
+#memory {
+  color: @subtext;
+  border-radius: 0px;
+  margin-right: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top: 1px solid @accent1;
+  font-size: 13px;
+  border: none;
+}
+
+#temperature {
+  color: @subtext;
+  border-radius: 0px;
+  margin-right: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top: 1px solid @accent1;
+  font-size: 13px;
+  border: none;
+}
+
+#disk {
+  color: @subtext;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding-left: 5px;
+  padding-right: 1rem;
+  border-top: 1px solid @accent1;
+  font-size: 13px;
+  border: none;
+}
+
+/* =============================== */
+/* Updates Module */
+/* =============================== */
+#custom-updates {
+  color: @text;
+  border-radius: 0px;
+  letter-spacing: 1px;
+  border-left: 2px dotted @accent1;
+  border-right: 2px dotted  @accent1;
+  border-top: none;
+  font-size: 13px;
+}
+
+/* =============================== */
+/* Clock Module */
+/* =============================== */
+#clock {
+  color: @text;
+  letter-spacing: 1px;
+  border: none;
+  font-size: 13px;
+}
+
+/* =============================== */
+/* Music Module */
+/* =============================== */
+
+#custom-music.Playing {
+  background: rgb(0, 0, 0);
+  color: #fff;
+  font-size: 13px;
+  /*background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 1px 1px #fff;*/
+}
+/*Classic White text on black*/
+/*
+#custom-music.Playing {
+  background: rgb(0, 0, 0);
+  background-color: #000;
+  color: #fff;
+}
+*/
+
+#custom-music.Paused,
+#custom-music.Stopped {
+  background: @surface0;
+  border: 2px solid #000;
+  font-size: 13px;
+}
+
+/* =============================== */
+/* Music/PlayerCTL Module */
+/* =============================== */
+#custom-music {
+  color: @text;
+  font-size: 13px;
+}
+
+/* =============================== */
+/* Network Module */
+/* =============================== */
+#network {
+  color: @text;
+  margin-right: 0px;
+  padding-right: 5px;
+  padding-left: 10px;
+  letter-spacing: 1px;
+  border: none;
+  font-size: 13px;
+}
+
+/* =============================== */
+/* PulseAudio Module */
+/* =============================== */
+#pulseaudio {
+  color: @text;
+  border-radius: 0;
+  margin-right: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 7px;
+  letter-spacing: 1px;
+  border: none;
+  font-size: 13px;
+}
+/* =============================== */
+/* Notifications Module */
+/* =============================== */
+#custom-notifications {
+  color: @text;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding-right: 0.2rem;
+  border: none;
+  font-size: 13px;
+}
+
+/* =============================== */
+/* Tray Module */
+/* =============================== */
+#tray {
+  color: @text;
+  padding-right: 1.5rem;
+  border: none;
+  font-size: 13px;
+}
+
+/* =============================== */
+/* |       Custom Modules        | */
+/* =============================== */
+/* Powermenu Module */
+#custom-power {
+  color: @text;
+  /* border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding-left: 8px; */
+  padding-right: 1.20rem;
+  font-size: 13px;
+}
+
+#custom-cycle_wall {
+  background-color: @surface0;
+  color: @text;
+  padding-left: 1.5rem;
+  padding-right: 0.4rem;
+  padding-top: 0.3rem;
+  border-top: 1px solid @accent1;
+  font-size: 16px;
+}
+
+#custom-launcher {
+  color: @text;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: none;
+  font-size: 13px;
+}
+
+#idle_inhibitor {
+  color: @text;
+  padding-right: 0.5rem;
+  padding-top: 4px;
+  padding-left: 10px;
+}
