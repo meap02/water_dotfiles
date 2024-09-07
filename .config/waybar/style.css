@@ -1,11 +1,11 @@
 @define-color text #e0d6ca;
 @define-color subtext #04d1f9;
-@define-color surface0 #0e1922;
+@define-color surface0 #08111C;
 @define-color surface1 #1A3140;
 @define-color surface2 #3C7DA6;
 @define-color surface3 #82B0D9;
 
-@define-color accent1 #D08832;
+@define-color accent1 #C87200;
 @define-color accent2 #29F2A9;
 
 /* =============================== */
@@ -14,7 +14,7 @@
 * { 
   border-radius: 0px;
   border: none;
-  font-family: 'Queensides', "Hurmit Nerd Font Regular";
+  font-family: 'Queensides', "Hurmit Nerd Font";
   font-weight: bold;
   font-size: 13px;
   min-height: 0px;
@@ -255,7 +255,7 @@
   color: @text;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  padding-right: 0.2rem;
+  margin-right: 0.1rem;
   border: none;
   font-size: 13px;
 }
@@ -287,7 +287,7 @@
   background-color: @surface0;
   color: @text;
   padding-left: 1.5rem;
-  padding-right: 0.4rem;
+  padding-right: 0.6rem;
   padding-top: 0.3rem;
   border-top: 1px solid @accent1;
   font-size: 16px;
@@ -303,7 +303,7 @@
 
 #idle_inhibitor {
   color: @text;
-  padding-right: 0.5rem;
+  margin-right: 0.6rem;
   padding-top: 4px;
   padding-left: 10px;
 }
