@@ -74,6 +74,7 @@ x-scheme-handler/nntp=userapp-Thunderbird-NQDMO2.desktop;userapp-Thunderbird-AYI
 x-scheme-handler/snews=userapp-Thunderbird-NQDMO2.desktop;userapp-Thunderbird-AYILO2.desktop;
 x-scheme-handler/webcal=userapp-Thunderbird-D1KSO2.desktop;userapp-Thunderbird-8Z9GO2.desktop;
 x-scheme-handler/webcals=userapp-Thunderbird-D1KSO2.desktop;userapp-Thunderbird-8Z9GO2.desktop;
+image/png=gimp.desktop;
 
 [Default Applications]
 application/gzip=org.gnome.FileRoller.desktop;
